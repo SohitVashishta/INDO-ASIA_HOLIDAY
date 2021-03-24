@@ -1,0 +1,113 @@
+
+#demos .owl-carousel {
+	    margin:0
+}
+#demos .owl-carousel .item {
+	height:400px;
+	margin:0 2px;
+}
+#demos .owl-carousel .item h4 {
+	color:#FFF;
+	font-weight:400;
+	margin-top:0rem
+}
+#demos .owl-carousel .item-video {
+	height:300px
+}
+
+#demosD .owl-carousel2 {
+	margin:0
+}
+#demosD .owl-carousel2 .item {
+	margin:0 2px;
+}
+#demosD .owl-carousel .item h4 {
+	color:#FFF;
+	font-weight:400;
+	margin-top:0rem
+}
+#demosD .owl-carousel2 .item-video {
+	height:300px
+}
+
+#demos #setup {
+	margin-top:4rem
+}
+#demos .demo-list h5 {
+	margin:0
+}
+#demos1 .owl-carousel {
+	    margin:0
+}
+#demos1 .owl-carousel .item {
+	height:400px;
+	margin:0 2px;
+}
+#demos1 .owl-carousel .item h4 {
+	color:#FFF;
+	font-weight:400;
+	margin-top:0rem
+}
+#demos1 .owl-carousel .item-video {
+	height:300px
+}
+#demos1 #setup {
+	margin-top:4rem
+}
+#demos1 .demo-list h5 {
+	margin:0
+}
+@media only screen {
+.demo-list [class*="column"]+[class*="column"]:last-child {
+float:left
+}
+}
+
+#docs {
+	padding-top:2rem
+}
+#docs .docs-content h2:first-child {
+	padding-top:0;
+	margin-top:0
+}
+#docs h4 {
+	margin-top:0.3rem;
+	margin-bottom:0.5rem
+}
+#docs ul.side-nav {
+	text-align:right;
+	margin-bottom:1rem
+}
+#docs ul.side-nav li {
+	margin:0;
+padding:.3rem 3rem .3rem 0
+}
+#docs ul.side-nav li:hover, #docs ul.side-nav li.active {
+	background:#f7f7f7
+}
+#docs ul.side-nav li:hover a, #docs ul.side-nav li.active a {
+	color:#000;
+	background-color:transparent
+}
+#docs ul.side-nav li.side-nav-head {
+	text-transform:uppercase;
+	color:#000;
+	font-size:1rem;
+	font-weight:bold;
+padding:0rem 3rem .3rem 0
+}
+#docs ul.side-nav li.side-nav-head:hover {
+	background:transparent
+}
+@media only screen and (max-width: 40em) {
+#docs {
+padding-top:1rem
+}
+#docs ul.side-nav {
+text-align:left
+}
+}
+
+#demos .owl-carousel .item  ul{
+    margin-left:5px !important;
+}

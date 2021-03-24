@@ -1,0 +1,89 @@
+﻿<div class="modal fade" id="myModa1sign-in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <h3>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times" aria-hidden="true"></i></button>
+            </h3>
+            <div class="modal-body">
+                <div class="panel-body">
+                    <div class="col-md-6">
+                        <div class="sign-in-form">
+                            <h3> Sign Up!</h3>
+                            <form method="post" id="user_signup" action="javascript://" autocomplete="off">
+                                <input class="form-control mr-sm-2" name="EmailId" placeholder="Email*" type="text">
+                                <div class="txtfieldMain textfieldMain_mobile">
+                                    <div class="country_details">
+                                        <div id="iti-flag" class="iti-flag in"></div>
+                                        <div class="iti-arrow"></div>
+                                    </div>
+                                    <div class="country_dropdown">
+                                        <div class="search_country">
+                                            <input type="text" name="" class="txtfield form-control countries_list" placeholder="Search countries" id="countries_list">
+                                            <div class="search_icon"></div>
+                                        </div>
+                                        <ul class="allcountries"></ul>
+                                    </div>
+                                    <input type="text" class="txtfield country_code" id="mobile_code" readonly name="countrycode" value="+91">
+                                    <input type="text" name="mobilenum" id="mobilenum" maxlength="15" placeholder="Mobile*" class="form-control mr-sm-2">
+                                </div>
+                                <!--<input class="form-control mr-sm-2" name="mobile" placeholder="Mobile (+91)" type="text">-->
+                                <input class="form-control mr-sm-2" name="password" placeholder="Password*" type="password">
+                                <input class="form-control mr-sm-2" name="copassword" placeholder="Re-enter Password*" type="password">
+                                <p style="color:red;" class="signuperror_msg"></p>
+                                <p style="color:green;" class="signupsuccess_msg"></p>
+                                <button class="btn btn-warning signup" type="submit">Sign Up</button>
+                            </form>
+                            <p class="small"> (by sign up, you agree to our <a href="terms-conditions.html" class="text-danger" target="_blank">terms and conditions</a>)</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 sign-in-form-border-left">
+                        <form method="post" id="auth_login" action="https://www.indoasiaholidays.com/users/index/userlogin" autocomplete="off">
+                            <div class="sign-in-form-left">
+                                <h3> Already a member?  Login!</h3>
+                                <div class="social-cont">
+                                    <div class="fb left">
+                                        <a href="Facebook/index.html">
+                                            <div class="fb-left "><img src="public/img/fb.png" border="0" alt="" title="" class="no-border"></div>
+                                            <div class="fb-right">Sign up with <span>Facebook</span></div>
+                                        </a>
+                                    </div>
+                                    <div class="goole-plus right">
+                                        <a href="https://accounts.google.com/o/oauth2/auth?response_type=code&amp;access_type=online&amp;client_id=988663968248-eevb7s2b59luasjh1blc9tp50tpjv9pj.apps.googleusercontent.com&amp;redirect_uri=https%3A%2F%2Fwww.indoasiaholidays.com%2Fusers%2Findex%2Fgoogle-authentication&amp;state&amp;scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fplus.login%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&amp;approval_prompt=auto">
+                                            <div class="goole-plus-left"><img src="public/img/google-logo.png" border="0" alt="" title="" class="no-border"></div>
+                                            <div class="goole-plus-right">Sign up with <span>Google</span></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <p class="or-count" align="center">OR</p>
+                                <div id="loginPanel">
+                                    <input class="form-control mr-sm-2" placeholder="Enter Email*" autocomplete="off" name="userName" type="text">
+                                    <input class="form-control mr-sm-2" placeholder="Enter Password*" autocomplete="off" name="userPassword" type="password">
+                                    <p style="color:red;" class="login_msg"></p>
+                                    <button type="submit" class="btn btn-warning loging">Login</button>
+                                    <!--<button class="btn btn-warning" type="submit" formaction="index.html">Login</button>-->
+                                    <p class="small"><a href="javascript:void(0);" class="text-danger forgotpass">Forgot password?</a></p>
+                                </div>
+                            </div>
+                        </form>
+
+                        <form method="post" id="forgot_password" action="#" autocomplete="off" style="display: none;">
+                            <div class="sign-in-form-left">
+                                <div id="successmsg">
+                                    <p class="space-bottom or-count" align="center" style="font-size:13px">We will send a link to reset your password, on your registered email. Never share this link with anyone.</p>
+                                    <input class="form-control mr-sm-2" placeholder="Enter Registered Email*" autocomplete="off" name="forget" type="text">
+                                    <p style="color:red;" class="forgot_msg"></p>
+                                    <button type="submit" class="btn btn-warning forgot">Submit</button>
+                                </div>
+                                <p class="small"><a href="javascript:void(0);" class="text-danger login">Login?</a></p>
+                            </div>
+                        </form>
+
+                    </div>
+                    <div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+</div>

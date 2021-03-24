@@ -1,0 +1,606 @@
+﻿<!DOCTYPE html>
+<html lang='en' class=''>
+<head>
+
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sayonestop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="Sayonestop Holidays" />
+    <meta property="og:description" content="" />
+    <!-- ++++ favicon ++++ -->
+    <link rel="icon" type="img/png" sizes="32x32" href="~/public/img/favicon-icon.png">
+    <link rel="icon" type="img/png" sizes="96x96" href="~/public/img/favicon-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="~/public/img/favicon-icon.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="~/public/img/favicon-icon.png">
+    <!-- Font integration -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Roboto+Mono|Roboto+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Yellowtail" rel="stylesheet">
+    <link href="~/public/style/style-1.css" rel="stylesheet" type="text/css">
+    <link href="~/public/style/main.css" rel="stylesheet" type="text/css">
+    <link href="~/public/style/responsive.css" rel="stylesheet" type="text/css">
+    <link href="~/public/assets/css/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/public/assets/css/jquery-ui.css" />
+
+    <link rel="stylesheet" href="~/public/countrycode/style.css">
+
+    <!-- Animate.css -->
+    <!--<link rel="stylesheet" href="public/style/animate.css">-->
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="~/public/style/icomoon.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="~/public/style/bootstrap.css">
+    <!-- Flexslider  -->
+    <link rel="stylesheet" href="~/public/style/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/public/style/owl.theme.default.min.css">
+    <link rel="stylesheet" href="~/public/style/docs.theme.min.css">
+    <link rel="stylesheet" type="text/css" href="~/public/style/demo.css" />
+    <link rel="stylesheet" type="text/css" href="~/public/style/custom.css" />
+    <link rel="stylesheet" type="text/css" href="~/public/style/slick.css" />
+    <link rel="stylesheet" href="~/public/assets/css/navigation.css">
+    <!-- Modernizr JS -->
+    <script type="text/javascript" src="~/public/js/modernizr.custom.79639.js"></script>
+    <title>@ViewBag.Title - INDO-ASIA HOLIDAY</title>
+</head>
+<body>
+    <div id="page">
+        <div id="banner-cont">
+            @Html.Partial("_header")
+            <div class="col-md-12">
+                @Html.Partial("_slidebanner")
+            </div>
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="Search-Count">
+                        <!-- <div class="top-menu"> -->
+                        <div class="container">
+                            <div class="col-md-12 Search-Count-mid">
+                                <form action="javascript://" method="get" onsubmit="return checkCityIdData()">
+                                    <div class="col-md-9 col-xs-8 no-padding">
+                                        <input class="form-control mr-sm-2 destinationBox" name="key" placeholder="Enter Destination" type="text">
+                                        <input type="hidden" name="cityid" id="cityid">
+                                    </div>
+                                    <div class="col-md-3 col-xs-4 no-padding">
+                                        <a href="#"></a>
+                                        <button class="btn" type="submit">Explore</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Search-Count-bottom"></div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                @Html.Partial("DomesticPackages")
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-md-12">
+                @Html.Partial("InternationalPackages")
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-md-12">
+                @Html.Partial("Testimonials")
+            </div>
+            <div class="clearfix"></div>
+            <div class="clearfix"></div>
+            <div class="col-md-12">&nbsp;</div>
+            <div class="col-md-12">&nbsp;</div>
+            <div class="clearfix"></div>
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="resigter-brush">
+                        <div class="resigter-brush-shadow"><img src="public/img/register-brush.png" alt="" title=""></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="resigter-box">
+
+                        <div class="container">
+
+                            <div class="col-md-3">
+                                <div class="resigter-box-content">
+                                    <h3>200+ TRAVEL PARTNERS</h3>
+                                    <p class="readyMore"><blockquote>
+                                    <p>Our extensive global network of <em><strong>travel partners</strong></em> and <em><strong>in-house destination experts</strong></em> works round the clock to ensure <em><strong>unmatched service</strong></em> for a <em><strong>seamless travel experience.</strong></em></p>
+                                    </blockquote>
+                                    </p>
+
+                                </div>
+
+                            </div>
+                            <div class="col-md-3">
+                                <div class="resigter-box-content">
+                                    <h3>POCKET-FRIENDLY LUXURY</h3>
+                                    <p class="readyMore"><blockquote>
+                                    <p>We focus on enriching your experience, by providing top of the class <strong><em>accommodation</em>, <em>transport</em>, guides</strong>, and <em><strong>dining experiences</strong></em>, without burning a hole in your pocket.</p>
+                                    </blockquote>
+                                    </p>
+
+                                </div>
+
+                            </div>
+                            <div class="col-md-3">
+                                <div class="resigter-box-content">
+                                    <h3>OVER 1 LAC CUSTOMERS</h3>
+                                    <p class="readyMore"><blockquote>
+                                    <p>Having catered to <em><strong>4000+ professionals</strong></em> from&nbsp;<em><strong>35+ corporates</strong>, <strong>250+ groups</strong>,</em> and&nbsp;<em><strong>10000+ travelers</strong></em>, we understand your varied requirements and serve you to the best of our capabilities.</p>
+                                    </blockquote>
+                                    </p>
+
+                                </div>
+
+                            </div>
+                            <div class="col-md-3">
+                                <div class="resigter-box-content">
+                                    <h3>EXCLUSIVE DESTINATIONS</h3>
+                                    <p class="readyMore"><blockquote>
+                                    <p>From the <em><strong>Fjords of Norway</strong></em> to the <em><strong>Caves of Slovenia</strong></em>, from the <em><strong>Jungles of Amazon</strong></em> to the <em><strong>Peaks of Nepal</strong></em>, we let you quench your thirst for whimsical experiences across the globe.</p>
+                                    </blockquote>
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!-- <div class="top-menu"> -->
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="footer-brusf">
+                        <div class="footer-brusf-shadow"><img src="public/img/register-brush-bot1.png" alt="" title=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        @Html.Partial("footer")
+        <div class="rightFloat">
+            <div class="rightFloatIn">
+                <a href="tel:+91-9717766099">
+                    <div class="rightFloatLeft"><i class="fa fa-phone"></i></div>
+                    <div class="rightFloatRight">
+                        <p>+91-9717766099</p>
+                    </div>
+                </a>
+                <div class="cl"></div>
+            </div>
+            <div class="rightFloatIn">
+                <a href="#" role="button" data-target="#myModa1Enquiry" data-toggle="modal">
+                    <div class="rightFloatLeft"><i class="fa fa-edit"></i></div>
+                    <div class="rightFloatRight">
+                        <p>Request A Call Back</p>
+                    </div>
+                </a>
+                <div class="cl"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+    <script src="~/public/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="~/public/assets/js/jquery-ui-1.12.1.js"></script>
+    <script src="~/public/js/common_functions.js"></script>
+    <script src="~/public/js/login.js"></script>
+    @*<script>
+
+            setTimeout(function () {
+                $.getJSON('public/data/dynamic/package_destinations.json', function (destinations) {
+                    $(".destinationBox").autocomplete({
+                        minLength: 3,
+                        source: destinations,
+                        autoFocus: true,
+                        select: function (event, ui) {
+                            var label = ui.item.label;
+                            var value = ui.item.value.toLowerCase().trim().replace(" ", "-");
+                            var value1 = value.replace(" ", "-");
+                            var valueFinal = value1.replace(" ", "-");
+                            var code = ui.item.code;
+                            var cityid = ui.item.id;
+                            var TypeTitle = ui.item.TypeTitle;
+                            var countryName = ui.item.countryName.toLowerCase().trim();
+                            var mCountryName = countryName.replace(" ", "-");
+                            var mCountryNameFinal = mCountryName.replace(" ", "-");
+                            //        alert(countryName);
+                            if (TypeTitle == 'state' || TypeTitle == 'city') {
+                                window.location.href = 'holidays/' + mCountryNameFinal + '/' + valueFinal + '-tour-packages';
+                            } else {
+                                window.location.href = 'holidays/' + valueFinal + '-tour-packages';
+                            }
+                            $(".hcode").val(code);
+                            $("#cityid").val(cityid);
+                        }
+                    });
+                });
+            }, 1000);
+        </script>*@
+    @*<script>
+
+            setTimeout(function () {
+                $.getJSON('public/data/dynamic/package_destinations.json', function (destinations) {
+                    $(".destinationBoxTmx___").autocomplete({
+                        minLength: 3,
+                        source: destinations,
+                        select: function (event, ui) {
+                            var label = ui.item.label;
+                            var value = ui.item.value;
+                            var code = ui.item.code;
+                            var cityid = ui.item.id;
+                            console.log(cityid);
+                            getSighAct(cityid);
+                            $(".hcode").val(code);
+                            $(".cityid").val(cityid);
+                        }
+                    });
+                });
+            }, 1000);
+
+
+
+
+
+
+
+        </script>*@
+
+
+    <div class="modal fade" id="myModa1hotelview" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" id="hotelDetailViewList">
+
+        </div>
+    </div>
+
+    <div class="modal fade" id="myModalHotelOptions" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-small" id="hotelOptionalViewList">
+
+        </div>
+    </div>
+    <script src="~/public/js/bootstrap.min.js"></script>
+    <script src="~/public/js/owl.carousel.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 0,
+                responsiveClass: true,
+                autoplay: true,
+                autoplayTimeout: 1800,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: true
+                    },
+                    600: {
+                        items: 3,
+                        nav: false
+                    },
+                    1000: {
+                        items: 5,
+                        nav: true,
+                        loop: true,
+                        margin: 0
+                    }
+                }
+            })
+        })
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel2').owlCarousel({
+                loop: true,
+                margin: 0,
+                responsiveClass: true,
+
+                autoplay: true,
+                autoplayTimeout: 1000,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: true
+                    },
+                    600: {
+                        items: 3,
+                        nav: false
+                    },
+                    1000: {
+                        items: 5,
+                        nav: true,
+                        loop: true,
+                        margin: 0
+                    }
+                }
+            })
+
+
+        })
+    </script>
+    <script src="~/public/js/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.customer-logos').slick({
+                slidesToShow: 8,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 1000,
+                arrows: false,
+                dots: false,
+                pauseOnHover: false,
+                responsive: [{
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 4
+                    }
+                }, {
+                    breakpoint: 520,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                }]
+            });
+        });
+    </script>
+    <script>
+        $("#mobile-menu").click(function () {
+            $(".mobile-menu").slideToggle("slow");
+        });
+    </script>
+    <script>
+        $("#mobile-user").click(function () {
+            $(".mobile-user").slideToggle("slow");
+        });
+    </script>
+    <script>
+        $(".hat").click(function () {
+            $(".menu-out").toggle();
+
+        });
+    </script>
+    <script type="text/javascript" src="~/public/js/jquery.ba-cond.min.js"></script>
+    <script type="text/javascript" src="~/public/js/jquery.slitslider.js"></script>
+    <script src="~/public/js/ng/angular.min.js"></script>
+    <script src="~/public/js/ng/angular-route.min.js"></script>
+    <script src="~/public/js/ng/app.js"></script>
+    <script src="~/public/js/ng/ngfactory.js"></script>
+    <script type="text/javascript" src="~/public/js/ng/footer.js"></script>
+    <script type="text/javascript">
+        $(function () {
+
+            var Page = (function () {
+
+                var $navArrows = $('#nav-arrows'),
+                    $nav = $('#nav-dots > span'),
+                    slitslider = $('#slider').slitslider({
+                        onBeforeChange: function (slide, pos) {
+
+                            $nav.removeClass('nav-dot-current');
+                            $nav.eq(pos).addClass('nav-dot-current');
+
+                        }
+                    }),
+
+                    init = function () {
+
+                        initEvents();
+
+                    },
+                    initEvents = function () {
+
+                        // add navigation events
+                        $navArrows.children(':last').on('click',
+                            function () {
+
+                                slitslider.next();
+                                return false;
+
+                            });
+
+                        $navArrows.children(':first').on('click', function () {
+
+                            slitslider.previous();
+                            return false;
+
+                        });
+
+                        $nav.each(function (i) {
+
+                            $(this).on('click', function (event) {
+
+                                var $dot = $(this);
+
+                                if (!slitslider.isActive()) {
+
+                                    $nav.removeClass('nav-dot-current');
+                                    $dot.addClass('nav-dot-current');
+
+                                }
+
+                                slitslider.jump(i + 1);
+                                return false;
+
+                            });
+
+                        });
+
+                    };
+
+                return { init: init };
+
+            })();
+
+            Page.init();
+
+            /**
+             * Notes:
+             *
+             * example how to add items:
+             */
+
+            /*
+
+            var $items  = $('<div class="sl-slide sl-slide-color-2"
+data-orientation="horizontal" data-slice1-rotation="-5"
+data-slice2-rotation="10" data-slice1-scale="2"
+data-slice2-scale="1"><div class="sl-slide-inner bg-1"><div class="sl-deco" data-icon="t"></div><h2>some text</h2><blockquote><p>bla bla</p><cite>Margi Clarke</cite></blockquote></div></div>');
+
+            // call the plugin's add method
+            ss.add($items);
+
+            */
+
+        });
+    </script>
+
+    <script src="~/public/js/send_enquiry.js"></script>
+    <script src="~/public/js/tmx_enquiry.js"></script>
+
+
+    <script type="text/javascript">
+        trimcontentTst(350);
+        trimcontentBlog(380);
+
+        trimcontentUnforgettableTrip(215);
+    </script>
+
+    <script>
+        // Get the modalflip
+        var modal = document.getElementById('id02');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        $(document).ready(function () {
+
+            setTimeout(function () {
+                $("#rightFloatInTollFreeNumber").stop().animate({
+                    right: 220
+                }, 220);
+            }, 1000);
+
+            setInterval(function () {
+                $("#rightFloatInTollFreeNumber").stop().animate({
+                    right: 50
+                }, 220);
+            }, 1000);
+
+
+            $('.rightFloat div').mouseover(function () {
+                $(this).stop().animate({
+                    right: 220
+                }, 220);
+            }).mouseout(function () {
+                $(this).stop().animate({
+                    right: 50
+                }, 220)
+            });
+        });
+    </script>
+    <script src="public/js/jquery.flip.min.js"></script>
+    <script>
+        $(function () {
+            $(".flip-horizontal").flip({
+                trigger: 'hover'
+            });
+            $(".flip-vertical").flip({
+                axis: 'x',
+                trigger: 'hover'
+            });
+
+        });
+    </script>
+
+
+    <script>
+        $(document).on('click', '.browse', function () {
+            var file = $(this).parent().parent().parent().find('.file');
+            file.trigger('click');
+        });
+        $(document).on('change', '.file', function () {
+            $(this).parent().find('.form-control').val($(this).val().replace(/C:\\fakepath\\/i, ''));
+        });
+
+
+    </script>
+
+    <script type="text/javascript" src="~/public/js/queryonly.js"></script>
+    <script>
+
+        $('#depart_date').datepicker({
+            dateFormat: 'dd/mm/yy',
+            minDate: 0,
+            numberOfMonths: 2,
+            //changeYear: true,
+            onSelect: function () {
+                var CheckIn = $("#depart_date").val();
+                $("#return_date").val(CheckIn);
+                var arrCheckIn = CheckIn.split("index.html");
+                var day = parseInt(arrCheckIn[0]);
+                var month = arrCheckIn[1];
+                var year = arrCheckIn[2];
+                CheckIn = year + "/" + month + "/" + day;
+                $("#return_date").datepicker("option", { minDate: new Date(CheckIn) })
+            }
+        });
+
+        $('.datepicket').datepicker({
+            dateFormat: 'dd/mm/yy',
+            numberOfMonths: 1,
+            changeYear: true,
+            changeMonth: true,
+            yearRange: '1950:' + new Date().getFullYear(),
+
+        });
+        $('.Passdatepicket').datepicker({
+            dateFormat: 'dd/mm/yy',
+            numberOfMonths: 1,
+            changeYear: true,
+            changeMonth: true,
+            yearRange: '2000:2100'
+
+        });
+
+
+    </script>
+
+
+
+    <script src="~/public/countrycode/script9a48.js?rv=1144"></script>
+    <script>
+        $(function () {
+            $('.notSpace').on('keypress', function (e) {
+                if (e.which === 32)
+                    return false;
+            });
+        });
+    </script>
+
+    <script>
+        trimcontentDomestic(620);
+    </script>
+    <!-- Loader -->
+    <script src="~/public/assets/js/imagesloaded.pkgd.min.js"></script>
+    <!-- Navigation -->
+    <script src="~/public/assets/js/navigation.js"></script>
+    <!-- Main script -->
+    <script src="~/public/assets/js/main.js"></script>
+
+
+</body>
+</html>
+
